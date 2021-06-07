@@ -356,7 +356,7 @@ div.flex-v-box.roam-block-container {
 .rm-level1 .roam-block,
 .roam-body .roam-app h1,
 .rm-heading-level-1>.rm-block__self .rm-block__input {
-    color: var(--Foreground2) !important;
+    color: var(--header-font-color) !important;
     font-family: var(--header-font) !important;
     font-weight: bold;
 }
@@ -480,6 +480,7 @@ div.flex-v-box.roam-block-container {
     color: var(--Links_Color) !important;
     text-decoration-line: underline !important;
     text-decoration-style: dotted !important;
+    text-decoration-color: var(--Comments_Color) !important;
 }
 
 .rm-alias.rm-alias--block {
@@ -1336,6 +1337,7 @@ div.rm-reference-container {
 } */
 
 /*--- Block References ---*/
+
 .rm-block-ref,
 div.rm-block-ref {
     /* linked refs */
@@ -1348,6 +1350,10 @@ div.rm-block-ref {
 .rm-block-ref:hover {
     /* background-color: var(--block-ref-hover-bg); */
     background-color: var(--Contrast2);
+}
+
+.rm-block__ref-count-footnote {
+    color: var(--Comments_Color);
 }
 
 /*--- Context Menus ---*/
@@ -1920,7 +1926,7 @@ select {
 
 .rm-query .rm-query-title .rm-query-title-text {
     font-family: var(--code-font) !important;
-    font-size: .9em;
+    font-size: .8em;
     font-weight: bold;
 }
 
@@ -2459,4 +2465,8 @@ code {
 .smalltalk input {
     background: var(--background) !important;
     color: var(--Foreground);
+}
+
+.roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .menu-item {
+    color: var(--Foreground2) !important;
 }
